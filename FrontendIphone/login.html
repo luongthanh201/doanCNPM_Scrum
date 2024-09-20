@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="styles.css">
+     <!-- Slick Carousel CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+ 
+     <!-- Slick Carousel JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none"><h1>iPhone</h1></a> 
+        </div>
+
+    </header>
+
+    <section class="auth-section">
+        <div class="container">
+            <h2 class="section-title">Đăng Nhập</h2>
+            <form class="auth-form" action="login-handler.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Tài khoản:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Đăng Nhập</button>
+                <p class="auth-link">Bạn chưa có tài khoản? <a href="register.html">Đăng ký ngay</a></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 iPhone 15 | Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 - Trang chủ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>iPhone</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="account.html" class="user-icon">
+                <img src="asset/user.png" alt="User Icon">
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Khám phá iPhone 15 - Siêu phẩm mới nhất</h2>
+            <p>Với thiết kế sang trọng, hiệu suất vượt trội và camera đỉnh cao.</p>
+            <a href="detail.html" class="btn">Tìm hiểu thêm</a>
+        </div>
+    </section>
+    <section class="products">
+        <h2>iPhone 15 Series</h2>
+        <div class="product-grid">
+            <div class="product-box">
+                <img src="asset/ip15cyan.jpg" alt="iPhone15">
+                <h3>iPhone 15</h3>
+                <p>Màn hình 6.1 inch Super Retina XDR. Chip A16 Bionic.</p>
+                <button class="buy-btn" onclick="goToDetailPage('iphone15')">See more</button>
+            </div>
+            <div class="product-box">
+                <img src="asset/ip15green.jpg" alt="iPhone15Plus">
+                <h3>iPhone 15 Plus</h3>
+                <p>Màn hình 6.7 inch Super Retina XDR. Chip A16 Bionic.</p>
+                <button class="buy-btn" onclick="goToDetailPage('iPhone15Plus')">See more</button>
+            </div>
+            <div class="product-box">
+                <img src="asset/ip15silver.jpg" alt="iPhone15Pro">
+                <h3>iPhone 15 Pro</h3>
+                <p>Màn hình 6.1 inch Super Retina XDR. Chip A17 Bionic.</p>
+                <button class="buy-btn" onclick="goToDetailPage('iPhone15Pro')">See more</button>
+            </div>
+            <div class="product-box">
+                <img src="asset/ip15black.jpg" alt="iPhone15ProMax">
+                <h3>iPhone 15 Pro Max</h3>
+                <p>Màn hình 6.7 inch Super Retina XDR. Chip A17 Bionic.</p>
+                <button class="buy-btn" onclick="goToDetailPage('iPhone15ProMax')">See more</button>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 iPhone 15 | Tất cả các quyền được bảo lưu.</p>
+    </footer>
+    <script>
+        function goToDetailPage(product) {
+            // Chuyển hướng đến trang detail.html với tham số sản phẩm
+            window.location.href = `product-detail.html?product=${product}`;
+        }    
+    </script>
+</body>
+
+</html>

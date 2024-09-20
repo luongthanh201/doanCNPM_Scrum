@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 - Trang chủ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>iPhone</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="detail.html">Chi tiết sản phẩm</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="account.html" class="user-icon">
+                <img src="asset/user.png" alt="User Icon">
+            </a>
+        </div>
+    </header>
+    <section class="product-detail">
+        <div class="productDetail"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 iPhone 15 | Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    // Hàm để lấy tham số từ URL
+    function getQueryParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    // Lấy tên sản phẩm từ URL
+    const productName = getQueryParameter('product');
+
+    // Tùy thuộc vào tên sản phẩm, bạn có thể hiển thị thông tin tương ứng
+    if (productName === 'iphone15') {
+        document.title = 'Chi tiết iPhone 15'; // Thay đổi tiêu đề
+        // Thêm logic để hiển thị thông tin sản phẩm tại đây
+    }
+    if (productName === 'iPhone15Plus') {
+        document.title = 'Chi tiết iPhone 15 plus'; // Thay đổi tiêu đề
+        // Thêm logic để hiển thị thông tin sản phẩm tại đây
+    }
+    if (productName === 'iPhone15Pro') {
+        document.title = 'Chi tiết iPhone 15 pro'; // Thay đổi tiêu đề
+        // Thêm logic để hiển thị thông tin sản phẩm tại đây
+    }
+    if (productName === 'iPhone15ProMax') {
+        document.title = 'Chi tiết iPhone 15 promax'; // Thay đổi tiêu đề
+        // Thêm logic để hiển thị thông tin sản phẩm tại đây
+    }
+    </script>
+</body>
+
+</html>

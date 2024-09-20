@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 - Giới thiệu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>iPhone</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="detail.html">Chi tiết sản phẩm</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="account.html" class="user-icon">
+                <img src="asset/user.png" alt="User Icon">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro" data-aos="fade-up">
+            <h2>Giới thiệu iPhone 15</h2>
+            <p>iPhone 15 là một trong những sản phẩm mới nhất của Apple, được thiết kế với công nghệ tiên tiến nhất.</p>
+        </section>
+    
+        <section class="features" data-aos="fade-up">
+            <h3>Tính năng nổi bật</h3>
+            <ul>
+                <li>Màn hình Super Retina XDR 6.1 inch</li>
+                <li>Chip A16 Bionic mạnh mẽ</li>
+                <li>Camera 48 MP với khả năng chụp ảnh siêu rộng</li>
+                <li>Thời gian sử dụng pin lên đến 20 giờ</li>
+            </ul>
+        </section>
+    
+        <section class="gallery" data-aos="fade-up">
+            <h3>Hình ảnh sản phẩm</h3>
+            <div class="image-gallery">
+                <img src="asset/ip15green.jpg" alt="iPhone 15 Green">
+                <img src="asset/ip15blue.jpg" alt="iPhone 15 Blue">
+                <img src="asset/ip15pink.jpg" alt="iPhone 15 Pink">
+            </div>
+        </section>
+    </main>    
+
+    <footer>
+        <p>&copy; 2024 iPhone 15 | Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Thời gian hiệu ứng
+            easing: 'ease-in-out', // Hiệu ứng chuyển động
+            once: true // Chỉ chạy một lần
+        });
+    </script>
+    
+</body>
+
+</html>
